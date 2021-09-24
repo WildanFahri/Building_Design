@@ -26,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><span>Square.</span></a>
+	      <a class="navbar-brand" href="#"><span>BUILDING DESIGN</span></a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -38,9 +38,9 @@
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="projects"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="team"><span>Team</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="testimony"><span>Testimony</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="blog"><span>Blog</span></a></li>
+	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="blog"><span>Design</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="contact"><span>Contact</span></a></li>
-	          <li class="nav-item cta"><a href="#" class="nav-link">Request a quote</a></li>
+	          {{-- <li class="nav-item cta"><a href="#" class="nav-link">Request a quote</a></li> --}}
 
 	        </ul>
 	      </div>
@@ -52,14 +52,14 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-8 ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
-          	<p class="d-flex align-items-center" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+          	{{-- <p class="d-flex align-items-center" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
 							<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center mr-3">
     						<span class="ion-ios-play play mr-2"></span>
     						<span class="watch">Watch Video</span>
     					</a>
-						</p>
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We have a passion in creating new and unique spaces</h1>
-            <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Travel to the any corner of the world, without going around in circles</p>
+						</p> --}}
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Find Your Dream Home Inspiration!</h1>
+            <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Trusted and Experienced</p>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
               <div class="media-body">
                 <h3 class="heading mb-3">Perfectly Design</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                <p><a href="#" class="btn btn-primary">Read more</a></p>
+                {{-- <p><a href="#" class="btn btn-primary">Read more</a></p> --}}
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@
               <div class="media-body">
                 <h3 class="heading mb-3">Carefully Planned</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                <p><a href="#" class="btn btn-primary">Read more</a></p>
+                {{-- <p><a href="#" class="btn btn-primary">Read more</a></p> --}}
               </div>
             </div>
           </div>
@@ -94,7 +94,7 @@
               <div class="media-body">
                 <h3 class="heading mb-3">Smartly Execute</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                <p><a href="#" class="btn btn-primary">Read more</a></p>
+                {{-- <p><a href="#" class="btn btn-primary">Read more</a></p> --}}
               </div>
             </div>
           </div>
@@ -109,39 +109,39 @@
     				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(TemplateUser/images/about.jpg);">
     					<div class="request-quote py-5">
 	    					<div class="py-2">
-	    						<span class="subheading">Be Part of our Business</span>
-	    						<h3>Request A Quote</h3>
+	    						{{-- <span class="subheading">Be Part of our Business</span>
+	    						<h3>Request A Quote</h3> --}}
 	    					</div>
 	    					<form action="#" class="request-form ftco-animate">
 			    				<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="First Name">
+			    					{{-- <input type="text" class="form-control" placeholder="First Name"> --}}
 			    				</div>
 			    				<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Last Name">
+			    					{{-- <input type="text" class="form-control" placeholder="Last Name"> --}}
 			    				</div>
 		    					<div class="form-group">
 			    					<div class="form-field">
 	          					<div class="select-wrap">
 	                      <div class="icon-arr"><span class="ion-ios-arrow-down"></span></div>
 	                      <select name="" id="" class="form-control">
-	                      	<option value="">Select Your Services</option>
+	                      	{{-- <option value="">Select Your Services</option>
 	                        <option value="">Construction</option>
 	                        <option value="">Renovation</option>
 	                        <option value="">Interior Design</option>
 	                        <option value="">Exterior Design</option>
-	                        <option value="">Painting</option>
+	                        <option value="">Painting</option> --}}
 	                      </select>
 	                    </div>
 			              </div>
 			    				</div>
 		    					<div class="form-group">
-			    					<input type="text" class="form-control" placeholder="Phone">
+			    					{{-- <input type="text" class="form-control" placeholder="Phone"> --}}
 			    				</div>
 		    					<div class="form-group">
-			              <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+			              {{-- <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea> --}}
 			            </div>
 			            <div class="form-group">
-			              <input type="submit" value="Request A Quote" class="btn btn-secondary py-3 px-4">
+			              {{-- <input type="submit" value="Request A Quote" class="btn btn-secondary py-3 px-4"> --}}
 			            </div>
 			    			</form>
 	    				</div>
@@ -151,17 +151,17 @@
     				<div class="row justify-content-start pb-3">
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<span class="subheading">Welcome</span>
-		            <h2 class="mb-4">Since we started work in 1980</h2>
-		            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-		            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-		            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+		            <h2 class="mb-4">Since we started work in 2000</h2>
+		            <p>Building Design is a platform in the field of architecture that bridges a home owner with architects.</p>
+                    <p>And also one of the online building design portals that provides various design inspirations for a house and other buildings.</p>
+		            <p>For those of you who are planning to decorate or renovate your home, here are also many profiles and achievements of architects, which of course makes it easier for you to choose the best one.</p>
 		          </div>
 		        </div>
 		    		<div class="row">
 		          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate d-flex">
 		            <div class="block-18 text-center p-4 mb-4 align-self-stretch d-flex">
 		              <div class="text">
-		                <strong class="number" data-number="30">0</strong>
+		                <strong class="number" data-number="21">0</strong>
 		                <span>Years of experience</span>
 		              </div>
 		            </div>
@@ -177,7 +177,7 @@
 		          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate d-flex">
 		            <div class="block-18 text-center py-4 px-3 mb-4 align-self-stretch d-flex">
 		              <div class="text">
-		                <strong class="number" data-number="100">0</strong>
+		                <strong class="number" data-number="4">0</strong>
 		                <span>Our Architect</span>
 		              </div>
 		            </div>
@@ -202,7 +202,7 @@
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<span class="subheading">Accomplishments</span>
             <h2 class="mb-4">Our Projects</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p>Projects that we have completed</p>
           </div>
         </div>
     		<div class="row">
@@ -217,8 +217,8 @@
 				    				</a>
 			    				</div>
 			    				<div class="text px-4">
-			    					<h3><a href="#">Office Interior Design</a></h3>
-			    					<span>Interior Design</span>
+			    					<h3><a href="#">Modern Minimalist House</a></h3>
+			    					<span>Exterior Design</span>
 			    				</div>
 		    				</div>
             	</div>
@@ -231,8 +231,8 @@
 				    				</a>
 			    				</div>
 			    				<div class="text px-4">
-			    					<h3><a href="#">Office Interior Design</a></h3>
-			    					<span>Interior Design</span>
+			    					<h3><a href="#">Modern House</a></h3>
+			    					<span>Exterior Design</span>
 			    				</div>
 		    				</div>
             	</div>
@@ -245,8 +245,8 @@
 				    				</a>
 			    				</div>
 			    				<div class="text px-4">
-			    					<h3><a href="#">Office Interior Design</a></h3>
-			    					<span>Interior Design</span>
+			    					<h3><a href="#">Shophouse</a></h3>
+			    					<span>Exterior Design</span>
 			    				</div>
 		    				</div>
             	</div>
@@ -259,8 +259,8 @@
 				    				</a>
 			    				</div>
 			    				<div class="text px-4">
-			    					<h3><a href="#">Office Interior Design</a></h3>
-			    					<span>Interior Design</span>
+			    					<h3><a href="#">Boarding House</a></h3>
+			    					<span>Exterior Design</span>
 			    				</div>
 		    				</div>
             	</div>
@@ -273,8 +273,8 @@
 				    				</a>
 			    				</div>
 			    				<div class="text px-4">
-			    					<h3><a href="#">Office Interior Design</a></h3>
-			    					<span>Interior Design</span>
+			    					<h3><a href="#">Modern House</a></h3>
+			    					<span>Exterior Design</span>
 			    				</div>
 		    				</div>
             	</div>
@@ -287,8 +287,8 @@
 				    				</a>
 			    				</div>
 			    				<div class="text px-4">
-			    					<h3><a href="#">Office Interior Design</a></h3>
-			    					<span>Interior Design</span>
+			    					<h3><a href="#">Luxury Modern House</a></h3>
+			    					<span>Exterior Design</span>
 			    				</div>
 		    				</div>
             	</div>
@@ -307,7 +307,7 @@
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
           </div>
         </div>
-        <div class="row no-gutters">
+        <div class="row no-gutters text-center" >
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
@@ -397,7 +397,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-6 col-lg-3 ftco-animate">
+					{{-- <div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
 								<div class="img align-self-stretch" style="background-image: url(TemplateUser/images/staff-1.jpg);"></div>
@@ -485,7 +485,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> --}}
     	</div>
     </section>
 
@@ -537,7 +537,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Blog</span>
+            <span class="subheading">Design</span>
             <h2 class="mb-4">Read Our Stories</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
           </div>
@@ -710,7 +710,7 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <span class="subheading">Contact</span>
             <h2 class="mb-4">Contact Us</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            {{-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> --}}
           </div>
         </div>
         <div class="row no-gutters block-9">
@@ -751,7 +751,7 @@
           			<span class="icon-map-signs"></span>
           		</div>
           		<h3 class="mb-4">Address</h3>
-	            <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+	            <p>Jl. Soekarno Hatta No.9, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur</p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex">
@@ -760,7 +760,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+	            <p><a href="tel://0812323559878">+62 8123 2355 9878</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex">
@@ -769,7 +769,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+	            <p><a href="mailto:info@yoursite.com">building_design@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex">
@@ -778,7 +778,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Website</h3>
-	            <p><a href="#">yoursite.com</a></p>
+	            <p><a href="#">building_design.com</a></p>
 	          </div>
           </div>
         </div>
@@ -829,9 +829,9 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Jl. Soekarno Hatta No.9, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+62 8123 2355 9878</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">building_design@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
@@ -841,7 +841,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
