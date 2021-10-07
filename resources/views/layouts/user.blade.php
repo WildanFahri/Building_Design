@@ -6,6 +6,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <link href="{{asset('templates/user')}}/images/LogoBD.png" rel="icon">
+
         <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
 
         <link rel="stylesheet" href="{{asset('templates/user')}}/css/open-iconic-bootstrap.min.css">
@@ -40,9 +42,9 @@
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="projects"><span>Projects</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="team"><span>Team</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="testimony"><span>Testimony</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="blog"><span>Design</span></a></li>
+	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="design"><span>Design</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="contact"><span>Contact</span></a></li>
-	          {{-- <li class="nav-item cta"><a href="#" class="nav-link">Request a quote</a></li> --}}
+	          <li class="nav-item cta"><a href="https://wa.me/6281774821084" class="nav-link">Free Consultation</a></li>
 
 	        </ul>
 	      </div>
