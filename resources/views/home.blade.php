@@ -1,71 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Square - Free Bootstrap 4 Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+@extends('layouts.user')
 
-    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
+@section('content')
 
-    <link rel="stylesheet" href="TemplateUser/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="TemplateUser/css/animate.css">
-
-    <link rel="stylesheet" href="TemplateUser/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="TemplateUser/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="TemplateUser/css/magnific-popup.css">
-
-    <link rel="stylesheet" href="TemplateUser/css/aos.css">
-
-    <link rel="stylesheet" href="TemplateUser/css/ionicons.min.css">
-
-    <link rel="stylesheet" href="TemplateUser/css/flaticon.css">
-    <link rel="stylesheet" href="TemplateUser/css/icomoon.css">
-    <link rel="stylesheet" href="TemplateUser/css/style.css">
-  </head>
-  <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="#"><span>BUILDING DESIGN</span></a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="home"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="about"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="projects"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="team"><span>Team</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="testimony"><span>Testimony</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="blog"><span>Design</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="contact"><span>Contact</span></a></li>
-	          {{-- <li class="nav-item cta"><a href="#" class="nav-link">Request a quote</a></li> --}}
-
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-
-    <section class="hero-wrap js-fullheight" style="background-image: url('TemplateUser/images/bg_1.jpg');" data-section="home">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-md-8 ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
-          	{{-- <p class="d-flex align-items-center" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
-							<a href="https://vimeo.com/45830194" class="icon-video popup-vimeo d-flex justify-content-center align-items-center mr-3">
-    						<span class="ion-ios-play play mr-2"></span>
-    						<span class="watch">Watch Video</span>
-    					</a>
-						</p> --}}
-            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Find Your Dream Home Inspiration!</h1>
-            <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Trusted and Experienced</p>
-          </div>
+<section class="hero-wrap js-fullheight" style="background-image: url('{{asset('templates/user')}}/images/bg_1.jpg');" data-section="home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+        <div class="col-md-8 ftco-animate mt-5" data-scrollax=" properties: { translateY: '70%' }">
+          <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Find Your Dream Home Inspiration!</h1>
+          <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Trusted and Experienced</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-		<section class="ftco-section ftco-services ftco-no-pt">
+	<section class="ftco-section ftco-services ftco-no-pt">
       <div class="container">
         <div class="row services-section">
           <div class="col-md-4 d-flex align-self-stretch ftco-animate">
@@ -74,7 +23,6 @@
               <div class="media-body">
                 <h3 class="heading mb-3">Perfectly Design</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                {{-- <p><a href="#" class="btn btn-primary">Read more</a></p> --}}
               </div>
             </div>
           </div>
@@ -84,7 +32,6 @@
               <div class="media-body">
                 <h3 class="heading mb-3">Carefully Planned</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                {{-- <p><a href="#" class="btn btn-primary">Read more</a></p> --}}
               </div>
             </div>
           </div>
@@ -94,7 +41,6 @@
               <div class="media-body">
                 <h3 class="heading mb-3">Smartly Execute</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                {{-- <p><a href="#" class="btn btn-primary">Read more</a></p> --}}
               </div>
             </div>
           </div>
@@ -106,43 +52,16 @@
     	<div class="container">
     		<div class="row d-flex">
     			<div class="col-md-6 col-lg-4 d-flex">
-    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(TemplateUser/images/about.jpg);">
+    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url({{asset('templates/user')}}/images/about.jpg);">
     					<div class="request-quote py-5">
-	    					<div class="py-2">
-	    						{{-- <span class="subheading">Be Part of our Business</span>
-	    						<h3>Request A Quote</h3> --}}
-	    					</div>
 	    					<form action="#" class="request-form ftco-animate">
-			    				<div class="form-group">
-			    					{{-- <input type="text" class="form-control" placeholder="First Name"> --}}
-			    				</div>
-			    				<div class="form-group">
-			    					{{-- <input type="text" class="form-control" placeholder="Last Name"> --}}
-			    				</div>
 		    					<div class="form-group">
 			    					<div class="form-field">
 	          					<div class="select-wrap">
-	                      <div class="icon-arr"><span class="ion-ios-arrow-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	{{-- <option value="">Select Your Services</option>
-	                        <option value="">Construction</option>
-	                        <option value="">Renovation</option>
-	                        <option value="">Interior Design</option>
-	                        <option value="">Exterior Design</option>
-	                        <option value="">Painting</option> --}}
-	                      </select>
-	                    </div>
+	                      <div class="icon-arr"></div>
+	                      </div>
 			              </div>
 			    				</div>
-		    					<div class="form-group">
-			    					{{-- <input type="text" class="form-control" placeholder="Phone"> --}}
-			    				</div>
-		    					<div class="form-group">
-			              {{-- <textarea name="" id="" cols="30" rows="2" class="form-control" placeholder="Message"></textarea> --}}
-			            </div>
-			            <div class="form-group">
-			              {{-- <input type="submit" value="Request A Quote" class="btn btn-secondary py-3 px-4"> --}}
-			            </div>
 			    			</form>
 	    				</div>
     				</div>
@@ -211,8 +130,8 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="TemplateUser/images/project-1.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="TemplateUser/images/project-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+				    				<img src="{{asset('templates/user')}}/images/project-1.jpg" class="img-fluid" alt="Colorlib Template">
+				    				<a href="{{asset('templates/user')}}/images/project-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 				    					<span class="icon-expand"></span>
 				    				</a>
 			    				</div>
@@ -225,8 +144,8 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="TemplateUser/images/project-2.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="TemplateUser/images/project-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+				    				<img src="{{asset('templates/user')}}/images/project-2.jpg" class="img-fluid" alt="Colorlib Template">
+				    				<a href="{{asset('templates/user')}}/images/project-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 				    					<span class="icon-expand"></span>
 				    				</a>
 			    				</div>
@@ -239,8 +158,8 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="TemplateUser/images/project-3.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="TemplateUser/images/project-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+				    				<img src="{{asset('templates/user')}}/images/project-3.jpg" class="img-fluid" alt="Colorlib Template">
+				    				<a href="{{asset('templates/user')}}/images/project-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 				    					<span class="icon-expand"></span>
 				    				</a>
 			    				</div>
@@ -253,8 +172,8 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="TemplateUser/images/project-4.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="TemplateUser/images/project-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+				    				<img src="{{asset('templates/user')}}/images/project-4.jpg" class="img-fluid" alt="Colorlib Template">
+				    				<a href="{{asset('templates/user')}}/images/project-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 				    					<span class="icon-expand"></span>
 				    				</a>
 			    				</div>
@@ -267,8 +186,8 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="TemplateUser/images/project-5.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="TemplateUser/images/project-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+				    				<img src="{{asset('templates/user')}}/images/project-5.jpg" class="img-fluid" alt="Colorlib Template">
+				    				<a href="{{asset('templates/user')}}/images/project-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 				    					<span class="icon-expand"></span>
 				    				</a>
 			    				</div>
@@ -281,8 +200,8 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="TemplateUser/images/project-6.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="TemplateUser/images/project-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+				    				<img src="{{asset('templates/user')}}/images/project-6.jpg" class="img-fluid" alt="Colorlib Template">
+				    				<a href="{{asset('templates/user')}}/images/project-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
 				    					<span class="icon-expand"></span>
 				    				</a>
 			    				</div>
@@ -311,7 +230,7 @@
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(TemplateUser/images/team-1.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/team-1.jpg);"></div>
 							</div>
 							<div class="text d-flex align-items-center pt-3 text-center">
 								<div>
@@ -333,7 +252,7 @@
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(TemplateUser/images/team-2.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/team-2.jpg);"></div>
 							</div>
 							<div class="text d-flex align-items-center pt-3 text-center">
 								<div>
@@ -355,7 +274,7 @@
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(TemplateUser/images/team-3.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/team-3.jpg);"></div>
 							</div>
 							<div class="text d-flex align-items-center pt-3 text-center">
 								<div>
@@ -377,7 +296,7 @@
 					<div class="col-md-6 col-lg-3 ftco-animate">
 						<div class="staff">
 							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(TemplateUser/images/team-4.jpg);"></div>
+								<div class="img align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/team-4.jpg);"></div>
 							</div>
 							<div class="text d-flex align-items-center pt-3 text-center">
 								<div>
@@ -396,96 +315,6 @@
 							</div>
 						</div>
 					</div>
-
-					{{-- <div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(TemplateUser/images/staff-1.jpg);"></div>
-							</div>
-							<div class="text d-flex align-items-center pt-3 text-center">
-								<div>
-									<span class="position mb-2">Architect</span>
-									<h3 class="mb-4">Lloyd Wilson</h3>
-									<div class="faded">
-										<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-										<ul class="ftco-social text-center">
-			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              </ul>
-		              </div>
-		            </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(TemplateUser/images/staff-2.jpg);"></div>
-							</div>
-							<div class="text d-flex align-items-center pt-3 text-center">
-								<div>
-									<span class="position mb-2">Architect</span>
-									<h3 class="mb-4">Rachel Parker</h3>
-									<div class="faded">
-										<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-										<ul class="ftco-social text-center">
-			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              </ul>
-		              </div>
-		            </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(TemplateUser/images/staff-3.jpg);"></div>
-							</div>
-							<div class="text d-flex align-items-center pt-3 text-center">
-								<div>
-									<span class="position mb-2">Architect</span>
-									<h3 class="mb-4">Ian Smith</h3>
-									<div class="faded">
-										<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-										<ul class="ftco-social text-center">
-			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              </ul>
-		              </div>
-		            </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(TemplateUser/images/staff-4.jpg);"></div>
-							</div>
-							<div class="text d-flex align-items-center pt-3 text-center">
-								<div>
-									<span class="position mb-2">Architect</span>
-									<h3 class="mb-4">Alicia Henderson</h3>
-									<div class="faded">
-										<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-										<ul class="ftco-social text-center">
-			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              </ul>
-		              </div>
-		            </div>
-							</div>
-						</div>
-					</div>
-				</div> --}}
     	</div>
     </section>
 
@@ -497,7 +326,7 @@
         		<div class="carousel-testimony owl-carousel">
 	        		<div class="item">
 	        			<div class="testimony-wrap d-flex align-items-stretch">
-		              <div class="user-img d-flex align-self-stretch" style="background-image: url(TemplateUser/images/testimony-1.jpg)">
+		              <div class="user-img d-flex align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/testimony-1.jpg)">
 		              </div>
 		              <div class="text d-flex align-items-center">
 		              	<div>
@@ -513,7 +342,7 @@
 	        		</div>
 	        		<div class="item">
 	        			<div class="testimony-wrap d-flex align-items-stretch">
-		              <div class="user-img d-flex align-self-stretch" style="background-image: url(TemplateUser/images/testimony-2.jpg)">
+		              <div class="user-img d-flex align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/testimony-2.jpg)">
 		              </div>
 		              <div class="text d-flex align-items-center">
 		              	<div>
@@ -545,7 +374,7 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('TemplateUser/images/image_1.jpg');">
+              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -571,7 +400,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('TemplateUser/images/image_2.jpg');">
+              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_2.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -597,7 +426,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('TemplateUser/images/image_3.jpg');">
+              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_3.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -624,7 +453,7 @@
 
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('TemplateUser/images/image_4.jpg');">
+              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_4.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -650,7 +479,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('TemplateUser/images/image_5.jpg');">
+              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_5.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -676,7 +505,7 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('TemplateUser/images/image_6.jpg');">
+              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_6.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
               	<div class="d-flex align-items-center pt-2 mb-4 topp">
@@ -710,7 +539,6 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <span class="subheading">Contact</span>
             <h2 class="mb-4">Contact Us</h2>
-            {{-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> --}}
           </div>
         </div>
         <div class="row no-gutters block-9">
@@ -784,91 +612,7 @@
         </div>
       </div>
     </section>
-
-
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Square</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Architectural Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Interior Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Exterior Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Lighting Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>AutoCAD Service</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Jl. Soekarno Hatta No.9, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+62 8123 2355 9878</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">building_design@gmail.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved <i class="icon-heart color-danger" aria-hidden="true"></i>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="TemplateUser/js/jquery.min.js"></script>
-  <script src="TemplateUser/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="TemplateUser/js/popper.min.js"></script>
-  <script src="TemplateUser/js/bootstrap.min.js"></script>
-  <script src="TemplateUser/js/jquery.easing.1.3.js"></script>
-  <script src="TemplateUser/js/jquery.waypoints.min.js"></script>
-  <script src="TemplateUser/js/jquery.stellar.min.js"></script>
-  <script src="TemplateUser/js/owl.carousel.min.js"></script>
-  <script src="TemplateUser/js/jquery.magnific-popup.min.js"></script>
-  <script src="TemplateUser/js/aos.js"></script>
-  <script src="TemplateUser/js/jquery.animateNumber.min.js"></script>
-  <script src="TemplateUser/js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="TemplateUser/js/google-map.js"></script>
-  <script src="TemplateUser/js/main.js"></script>
-
   </body>
 </html>
+
+@endsection
