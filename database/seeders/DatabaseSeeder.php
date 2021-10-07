@@ -21,7 +21,6 @@ class DatabaseSeeder extends Seeder
             'address' => 'Malang',
             'phone' => '08512345678',
             'email' => 'admin@gmail.com',
-            'role' => "adm",
             'password' => Hash::make('admin1234')
         ]);
     }

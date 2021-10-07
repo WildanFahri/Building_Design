@@ -30,7 +30,7 @@
     <header id="header" class="fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="#"><span>BUILDING DESIGN</span></a>
+	      <a class="navbar-brand" href="{{route('home')}}"><span>BUILDING DESIGN</span></a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -44,7 +44,7 @@
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="testimony"><span>Testimony</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="design"><span>Design</span></a></li>
 	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="contact"><span>Contact</span></a></li>
-	          <li class="nav-item cta"><a href="https://wa.me/6281774821084" class="nav-link">Free Consultation</a></li>
+	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}" class="nav-link">Free Consultation</a></li>
 
 	        </ul>
 	      </div>
@@ -59,7 +59,7 @@
           <div class="row mb-5">
             <div class="col-md">
               <div class="ftco-footer-widget mb-4">
-                <h2 class="ftco-heading-2">Square</h2>
+                <h2 class="ftco-heading-2">Building Design</h2>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                   <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
