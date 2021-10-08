@@ -65,19 +65,19 @@
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('home')}}" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('user-index')}}" aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
                                 <span class="hide-table">Main Page</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('user.index')}}" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('user-index')}}" aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
                                 <span class="hide-table">User Data</span>
                             </a>
                         </li>
                         <li class="sidebar-item">
-                            {{-- <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('kamar.index')}}" aria-expanded="false"> --}}
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{route('design.index')}}" aria-expanded="false">
                                 <i class="fa fa-table" aria-hidden="true"></i>
                                 <span class="hide-menu">Design Data</span>
                             </a>
@@ -99,7 +99,7 @@
         </aside>
         <div class="page-wrapper" style="min-height: 250px;">
             @yield('content')
-            <footer class="footer text-center"> 2021©Hotelly.All Rights Reserved
+            <footer class="footer text-center"> 2021©BuildingDesign.All Rights Reserved
             </footer>
         </div>
     </div>

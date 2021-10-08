@@ -16,7 +16,7 @@
 <div class="container-fluid">
     <div class="row mb-4">
         <div class="col-12">
-            <a href="{{route('user.index')}}" class="btn btn-sm- btn-outline-secondary">Kembali</a>
+            <a href="{{route('design.index')}}" class="btn btn-sm- btn-outline-secondary">Kembali</a>
         </div>
     </div>
 
@@ -39,12 +39,12 @@
         <div class="col-md-6">
             <div class="card shadow">
                 <div class="card-header">
-                    Edit User
+                    Edit Design
                 </div>
                 <div class="card-body">
-                    <form action="{{route('user.update', $data->id)}}" method="POST">
-                        @csrf
+                    <form action="{{route('design.update', $data->id)}}" method="POST" enctype="multipart/form-data">
                         @method('PUT')
+                        @csrf
                         <div class="form-group mb-3">
                             <label>Name</label>
                             <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" value="{{$data->name}}">
@@ -54,30 +54,22 @@
                             @enderror
                         </div>
                         <div class="form-group mb-3">
-                            <label>Email</label>
-                            <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{$data->email}}">
+                            <label>Description</label>
+                            <input type="text" class="form-control @error('description') is-invalid @enderror" id="description" name="description" value="{{$data->description}}">
 
 
-                            @error('email')
+                            @error('description')
                             <small class="text-danger">{{$message}}</small>
                             @enderror
                         </div>
-                        <div class="form-group mb-3">
-                            <label>Phone</label>
-                            <input type="number" class="form-control @error('phone') is-invalid @enderror" id="phone" name="phone" value="{{$data->phone}}">
-
-
-                            @error('phone')
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Image</label>
+                            <input type="file" class="form-control" required="required" name="image" id="image" value="{{$data->image}}"><br>
+                            <img width="150px" src="{{asset('storage/'.$data->image)}}">
+                            {{-- <input class="form-control @error('image') is-invalid @enderror" type="file" id="image" name="image" accept="image/*">
+                            @error('image')
                             <small class="text-danger">{{$message}}</small>
-                            @enderror
-                        </div>
-                        <div class="form-group mb-3">
-                            <label>Adress</label>
-                            <input type="text" class="form-control @error('address') is-invalid @enderror" id="address" name="address" value="{{$data->address}}">
-
-                            @error('address')
-                            <small class="text-danger">{{$message}}</small>
-                            @enderror
+                            @enderror --}}
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

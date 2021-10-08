@@ -43,35 +43,38 @@
         <div class="col-12">
             <div class="card shadow">
                 <div class="card-header">
-                    Data User
+                    Data Design
                 </div>
+                <div class="container-fluid">
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <a href="{{route('design.create')}}" class="btn btn-success">Input</a>
+                        </div>
+                    </div>
                 <div class="card-body">
                     <table id="table-users" class="table table-bordered table-striped">
                         <thead>
                             <tr class="text-center">
-                                <th>#</th>
+                                <th>Id</th>
                                 <th>Nama</th>
-                                <th>Email</th>
-                                <th>Alamat</th>
-                                <th>No. HP</th>
-                                <th>Aksi</th>
+                                <th>Image</th>
+                                <th>Description</th>
                             </tr>
                         </thead>
                         <tbody></tbody>
 
 
-                    @foreach ($data as $user)
+                    @foreach ($data as $design)
                         <tr class="text-center">
 
-                            <td>{{ $user->id }}</td>
-                            <td>{{ $user->name }}</td>
-                            <td>{{ $user->email }}</td>
-                            <td>{{ $user->address }}</td>
-                            <td>{{ $user->phone }}</td>
+                            <td>{{ $design->id }}</td>
+                            <td>{{ $design->name }}</td>
+                            <td> <img width="100px" src="{{asset('storage/'.$design->image)}}"> </td>
+                            <td>{{ $design->description }}</td>
 
                             <td>
-                                <form action="{{ route('user.destroy',$user->id) }}" method="POST">
-                                    <a class="btn btn-primary" href="{{ route('user.edit',$user->id) }}">Edit</a>
+                                <form action="{{ route('design.destroy',$design->id) }}" method="POST">
+                                    <a class="btn btn-primary" href="{{ route('design.edit',$design->id) }}">Edit</a>
                                     @csrf @method('DELETE')
                                     <button type="submit" class="btn btn-danger">Delete</button>
                                 </form>
@@ -85,35 +88,4 @@
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="deleteUserModal" tabindex="-1" aria-labelledby="deleteUserModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="deleteUserModalLabel">Konfirmasi Hapus Data</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Apakah kamu yakin akan menghapus data ini?</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary m-1" data-bs-dismiss="modal">Close</button>
-                <form id="form-delete-user" class="m-1">
-                    @csrf
-                    <button type="submit" class="btn btn-danger m-1">Hapus</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
 @endsection
-
-{{-- @section('script')
-<script src="{{ asset('plugins') }}/datatables/jquery.dataTables.min.js"></script>
-<script src="{{ asset('plugins') }}/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="{{ asset('plugins') }}/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="{{ asset('plugins') }}/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="{{ asset('js/user.js')}}"></script>
-
-@endsection --}}

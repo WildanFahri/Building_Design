@@ -374,7 +374,18 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_1.jpg');">
+                @foreach ($data as $design)
+                <div class="col-lg-4 col-md-6 portfolio-item">
+                  <div class="portfolio-wrap">
+                    <img height="200" src="{{asset('storage/'.$design->image)}}" class="img-fluid" alt="">
+                    <div class="portfolio-links">
+                      <a href="{{asset('storage/'.$design->image)}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $design->nama }}"><i class="bx bx-plus"></i></a>
+                      <a href="{{ route('design.show',$design->id) }}" title="More Details"><i class="bx bx-link"></i></a>
+                    </div>
+                  </div>
+                </div>
+                @endforeach
+                {{-- <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_1.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
                 <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
@@ -448,7 +459,7 @@
                 <div class="d-flex align-items-center mt-4 meta">
 	                <p class="mb-0"><a href="#" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
                 </div>
-              </div>
+              </div> --}}
             </div>
           </div>
         </div>

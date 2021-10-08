@@ -3,6 +3,7 @@
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\userController;
+use App\Http\Controllers\designController;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -27,3 +28,5 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'dashboard'])->name('dashboard');
 Route::resource('user', userController::class);
+Route::resource('design', designController::class);
+Route::get('/user-index', [designController::class, 'userIndex'])->name('user-index');
