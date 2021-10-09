@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\design;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -11,22 +13,28 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    // public function index()
+    // {
+    //     return view('home');
+    // }
+    // public function dashboard()
+    // {
+    //     return view('dashboard');
+    // }
     public function index()
     {
-        return view('home');
-    }
-    public function dashboard()
-    {
-        return view('dashboard');
+        $data = design::all(); // Mengambil semua isi tabel
+        $posts = design::orderBy('id', 'desc')->paginate(5);
+        return view('home', [ 'data' => $data]);
     }
 }

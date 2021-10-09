@@ -363,107 +363,32 @@
     </section>
 
     <section class="ftco-section bg-light" data-section="design">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Design</span>
-            <h2 class="mb-4">See Our Designs</h2>
-            <p>Inspirational photos and design ideas</p>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-                @foreach ($data as $design)
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                  <div class="portfolio-wrap">
-                    <img height="200" src="{{asset('storage/'.$design->image)}}" class="img-fluid" alt="">
-                    <div class="portfolio-links">
-                      <a href="{{asset('storage/'.$design->image)}}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $design->nama }}"><i class="bx bx-plus"></i></a>
-                      <a href="{{ route('design.show',$design->id) }}" title="More Details"><i class="bx bx-link"></i></a>
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Design</span>
+                    <h2 class="mb-4">See Our Designs</h2>
+                    <p>Inspirational photos and design ideas</p>
+                </div>
+            </div>
+            <div class="row d-flex">
+            @foreach ($data as $design)
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <img class="block-20" src="{{asset('storage/'.$design->image)}}" alt="">
+                        <div class="text mt-3 float-right d-block">
+                            <h3 class="heading">{{ $design->name }}</h3>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                @endforeach
-                {{-- <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="#" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                </div>
-              </div>
+            @endforeach
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="#" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <p class="mb-0"><a href="{{ route('more') }}" class="btn btn-secondary">More Design</span></a></p>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_3.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="#" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_4.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="#" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_5.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="#" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="single.html" class="block-20" style="background-image: url('{{asset('templates/user')}}/images/image_6.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <div class="d-flex align-items-center mt-4 meta">
-	                <p class="mb-0"><a href="#" class="btn btn-secondary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
-                </div>
-              </div> --}}
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
     <section class="ftco-section contact-section ftco-no-pb" data-section="contact">

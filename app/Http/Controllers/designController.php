@@ -20,12 +20,12 @@ class designController extends Controller
         return view('admin.design.index', [ 'data' => $data]);
     }
 
-    public function userIndex()
-    {
-        $data = design::all(); // Mengambil semua isi tabel
-        $posts = design::orderBy('id', 'desc')->paginate(5);
-        return view('home', [ 'data' => $data]);
-    }
+    // public function home()
+    // {
+    //     $data = design::all(); // Mengambil semua isi tabel
+    //     $posts = design::orderBy('id', 'desc')->paginate(5);
+    //     return view('home', [ 'data' => $data]);
+    // }
 
     /**
      * Show the form for creating a new resource.
