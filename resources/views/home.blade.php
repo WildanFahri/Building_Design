@@ -22,7 +22,7 @@
               <div class="icon"><span class="flaticon-layers"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">Perfectly Design</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>We do not complete dozens of designs at once, so the product will be more controlled to obtain quality results. With an experienced team we work on your designs carefully.</p>
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@
               <div class="icon"><span class="flaticon-compass-symbol"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">Carefully Planned</h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p>For those of you who are planning a building, with the right design, without compromising the beauty and function of the building. Now you no longer have to worry about the design you want. Trust us, then we think of everything.</p>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@
       </div>
     </section>
 
-    <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="section-counter" data-section="about">
+    <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="section-counter about" data-section="about">
     	<div class="container">
     		<div class="row d-flex">
     			<div class="col-md-6 col-lg-4 d-flex">
@@ -318,7 +318,6 @@
     	</div>
     </section>
 
-
     <section class="testimony-section" data-section="testimony">
       <div class="container">
         <div class="row ftco-animate justify-content-center">
@@ -343,6 +342,22 @@
 	        		<div class="item">
 	        			<div class="testimony-wrap d-flex align-items-stretch">
 		              <div class="user-img d-flex align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/testimony-2.jpg)">
+		              </div>
+		              <div class="text d-flex align-items-center">
+		              	<div>
+			              	<div class="icon-quote">
+			              		<span class="icon-quote-left"></span>
+			              	</div>
+			                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+			                <p class="name">Jacob Bolton</p>
+			                <span class="position">CEO, Founder</span>
+		                </div>
+		              </div>
+		            </div>
+	        		</div>
+                    <div class="item">
+	        			<div class="testimony-wrap d-flex align-items-stretch">
+		              <div class="user-img d-flex align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/testimony-1.jpg)">
 		              </div>
 		              <div class="text d-flex align-items-center">
 		              	<div>

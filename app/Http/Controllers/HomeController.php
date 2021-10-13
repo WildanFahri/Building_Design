@@ -23,18 +23,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    // public function index()
-    // {
-    //     return view('home');
-    // }
-    // public function dashboard()
-    // {
-    //     return view('dashboard');
-    // }
     public function index()
     {
-        $data = design::all(); // Mengambil semua isi tabel
-        $posts = design::orderBy('id', 'desc')->paginate(5);
-        return view('home', [ 'data' => $data]);
+        $data = design::latest()->limit(6)->get();
+        return view('home', ['data' => $data]);
     }
 }

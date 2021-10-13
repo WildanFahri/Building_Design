@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="{{asset('templates/user')}}/css/flaticon.css">
         <link rel="stylesheet" href="{{asset('templates/user')}}/css/icomoon.css">
         <link rel="stylesheet" href="{{asset('templates/user')}}/css/style.css">
+        <link href="{{asset('templates/user')}}/assets/css/venobox/venobox.css" rel="stylesheet">
   </head>
 
   <body>
@@ -34,17 +35,43 @@
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
+          {{-- <a href="{{route('home')}}" class="nav-link" data-nav-section="home">Home</a> --}}
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="home"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="about"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="projects"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="team"><span>Team</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="testimony"><span>Testimony</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="design"><span>Design</span></a></li>
-	          <li class="nav-item"><a href="#" class="nav-link" data-nav-section="contact"><span>Contact</span></a></li>
-	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}" class="nav-link">Free Consultation</a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="home">Home</a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="about">About</a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="projects">Projects</a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="team"><span>Team</span></a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="testimony"><span>Testimony</span></a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="design"><span>Design</span></a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="contact"><span>Contact</span></a></li>
+	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}">Free Consultation</a></li>
+              {{-- <li class="text-center p-20 upgrade-btn">
+                <a class="btn d-grid btn-danger text-white" href="{{ route('logout') }}" onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">Log Out</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </li> --}}
+
+              {{-- <li class="nav-item"><a href="{{route('home')}}" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="{{route('home')}}/#about" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="{{route('home')}}/#project" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="{{route('home')}}/#team" class="nav-link"><span>Team</span></a></li>
+	          <li class="nav-item"><a href="{{route('home')}}/#testimony" class="nav-link"><span>Testimony</span></a></li>
+	          <li class="nav-item"><a href="{{route('home')}}/#design" class="nav-link"><span>Design</span></a></li>
+	          <li class="nav-item"><a href="{{route('home')}}/#contact" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}">Free Consultation</a></li> --}}
+
+              {{-- <li class="{{Request::segment(1) == null ? 'active' : ''}}"><a href="{{route('home')}}"><span>Home</span></a></li>
+	          <li class="{{Request::segment(1) == 'about' ? 'active' : ''}}"><a href="{{route('home')}}/#about"><span>About</span></a></li>
+	          <li class="{{Request::segment(1) == 'project' ? 'active' : ''}}"><a href="{{route('home')}}/#project"><span>Projects</span></a></li>
+	          <li class="{{Request::segment(1) == 'team' ? 'active' : ''}}"><a href="{{route('home')}}/#team"><span>Team</span></a></li>
+	          <li class="{{Request::segment(1) == 'testimony' ? 'active' : ''}}"><a href="{{route('home')}}/#testimony"><span>Testimony</span></a></li>
+	          <li class="{{Request::segment(1) == 'design' ? 'active' : ''}}"><a href="{{route('home')}}/#design"><span>Design</span></a></li>
+	          <li class="{{Request::segment(1) == 'contact' ? 'active' : ''}}"><a href="{{route('home')}}/#contact"><span>Contact</span></a></li>
+	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}">Free Consultation</a></li> --}}
 
 	        </ul>
 	      </div>
@@ -56,65 +83,50 @@
 
     <footer class="ftco-footer ftco-section">
         <div class="container">
-          <div class="row mb-5">
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4">
-                <h2 class="ftco-heading-2">Building Design</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-              </div>
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Building Design</h2>
+                            <p>Building Design is a platform in the field of architecture that bridges a home owner with architects.</p>
+                            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Services</h2>
+                        <ul class="list-unstyled">
+                            <li><span class="icon-long-arrow-right mr-2"></span>Architectural Design</a></li>
+                            <li><span class="icon-long-arrow-right mr-2"></span>Interior Design</a></li>
+                            <li><span class="icon-long-arrow-right mr-2"></span>Exterior Design</a></li>
+                            <li><span class="icon-long-arrow-right mr-2"></span>Lighting Design</a></li>
+                            <li><span class="icon-long-arrow-right mr-2"></span>AutoCAD Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Jl. Soekarno Hatta No.9, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+62 8123 2355 9878</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">building_design@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4 ml-md-4">
-                <h2 class="ftco-heading-2">Links</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-                </ul>
-              </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p> Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights BuildingDesign <i class="icon-heart color-danger" aria-hidden="true"></i></p>
+                </div>
             </div>
-            <div class="col-md">
-               <div class="ftco-footer-widget mb-4">
-                <h2 class="ftco-heading-2">Services</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Architectural Design</a></li>
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Interior Design</a></li>
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Exterior Design</a></li>
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Lighting Design</a></li>
-                  <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>AutoCAD Service</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4">
-                  <h2 class="ftco-heading-2">Have a Questions?</h2>
-                  <div class="block-23 mb-3">
-                    <ul>
-                      <li><span class="icon icon-map-marker"></span><span class="text">Jl. Soekarno Hatta No.9, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur</span></li>
-                      <li><a href="#"><span class="icon icon-phone"></span><span class="text">+62 8123 2355 9878</span></a></li>
-                      <li><a href="#"><span class="icon icon-envelope"></span><span class="text">building_design@gmail.com</span></a></li>
-                    </ul>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-
-              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights BuildingDesign <i class="icon-heart color-danger" aria-hidden="true"></i>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-          </div>
         </div>
-      </footer>
+    </footer>
 
 
 
@@ -137,6 +149,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="{{asset('templates/user')}}/js/google-map.js"></script>
     <script src="{{asset('templates/user')}}/js/main.js"></script>
+    <script src="{{asset('templates/user')}}/assets/css/venobox/venobox.min.js"></script>
     @yield('script')
 
 </body>
