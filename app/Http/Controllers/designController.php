@@ -72,7 +72,8 @@ class designController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = design::find($id);
+        return view('admin.design.detail', compact('data'));
     }
 
     /**

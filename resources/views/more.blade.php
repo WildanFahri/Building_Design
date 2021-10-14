@@ -15,6 +15,19 @@
                     </div>
                 </div>
 
+                <div class="row d-flex">
+                    @foreach ($data as $design)
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end">
+                                <img class="block-20" src="{{asset('storage/'.$design->image)}}" alt="">
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading">{{ $design->name }}</h3>
+                                    <p class="mb-0"><a href="{{ route('design.show',$design->id) }}" class="btn btn-secondary">Read More</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                    </div>
                 {{-- <div class="row awesome-project-content">
                     @foreach ($data as $design)
                         <div class="col-md-4 col-sm-4 col-xs-12">
