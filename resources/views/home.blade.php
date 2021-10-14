@@ -333,7 +333,7 @@
 			              		<span class="icon-quote-left"></span>
 			              	</div>
 			                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-			                <p class="name">Jacob Bolton</p>
+			                <p class="name">HAVENIA V. BANJARNAHOR</p>
 			                <span class="position">CEO, Founder</span>
 		                </div>
 		              </div>
@@ -349,7 +349,7 @@
 			              		<span class="icon-quote-left"></span>
 			              	</div>
 			                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-			                <p class="name">Jacob Bolton</p>
+			                <p class="name">AHMAD WILDAN FAHRI</p>
 			                <span class="position">CEO, Founder</span>
 		                </div>
 		              </div>
@@ -357,7 +357,7 @@
 	        		</div>
                     <div class="item">
 	        			<div class="testimony-wrap d-flex align-items-stretch">
-		              <div class="user-img d-flex align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/testimony-1.jpg)">
+		              <div class="user-img d-flex align-self-stretch" style="background-image: url({{asset('templates/user')}}/images/testimony-3.jpg)">
 		              </div>
 		              <div class="text d-flex align-items-center">
 		              	<div>
@@ -365,7 +365,7 @@
 			              		<span class="icon-quote-left"></span>
 			              	</div>
 			                <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-			                <p class="name">Jacob Bolton</p>
+			                <p class="name">AMELIA WIDYA ANDINI</p>
 			                <span class="position">CEO, Founder</span>
 		                </div>
 		              </div>
