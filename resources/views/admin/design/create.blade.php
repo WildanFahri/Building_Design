@@ -86,7 +86,6 @@
 @section('script')
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
-{{-- <script src="{{ asset('js/kamar.js') }}"></script> --}}
 <script>
     $("#fasilitas").select2({
         placeholder: "Pilih fasilitas"

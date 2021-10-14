@@ -47,32 +47,6 @@
 	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="design"><span>Design</span></a></li>
 	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="contact"><span>Contact</span></a></li>
 	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}">Free Consultation</a></li>
-              {{-- <li class="text-center p-20 upgrade-btn">
-                <a class="btn d-grid btn-danger text-white" href="{{ route('logout') }}" onclick="event.preventDefault();
-                    document.getElementById('logout-form').submit();">Log Out</a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                    @csrf
-                </form>
-            </li> --}}
-
-              {{-- <li class="nav-item"><a href="{{route('home')}}" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="{{route('home')}}/#about" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="{{route('home')}}/#project" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="{{route('home')}}/#team" class="nav-link"><span>Team</span></a></li>
-	          <li class="nav-item"><a href="{{route('home')}}/#testimony" class="nav-link"><span>Testimony</span></a></li>
-	          <li class="nav-item"><a href="{{route('home')}}/#design" class="nav-link"><span>Design</span></a></li>
-	          <li class="nav-item"><a href="{{route('home')}}/#contact" class="nav-link"><span>Contact</span></a></li>
-	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}">Free Consultation</a></li> --}}
-
-              {{-- <li class="{{Request::segment(1) == null ? 'active' : ''}}"><a href="{{route('home')}}"><span>Home</span></a></li>
-	          <li class="{{Request::segment(1) == 'about' ? 'active' : ''}}"><a href="{{route('home')}}/#about"><span>About</span></a></li>
-	          <li class="{{Request::segment(1) == 'project' ? 'active' : ''}}"><a href="{{route('home')}}/#project"><span>Projects</span></a></li>
-	          <li class="{{Request::segment(1) == 'team' ? 'active' : ''}}"><a href="{{route('home')}}/#team"><span>Team</span></a></li>
-	          <li class="{{Request::segment(1) == 'testimony' ? 'active' : ''}}"><a href="{{route('home')}}/#testimony"><span>Testimony</span></a></li>
-	          <li class="{{Request::segment(1) == 'design' ? 'active' : ''}}"><a href="{{route('home')}}/#design"><span>Design</span></a></li>
-	          <li class="{{Request::segment(1) == 'contact' ? 'active' : ''}}"><a href="{{route('home')}}/#contact"><span>Contact</span></a></li>
-	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}">Free Consultation</a></li> --}}
-
 	        </ul>
 	      </div>
 	    </div>

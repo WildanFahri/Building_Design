@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    @section('css')
-    <link rel="stylesheet" href="{{ asset('plugins') }}/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="{{ asset('plugins') }}/datatables-responsive/css/responsive.bootstrap4.min.css">
-    @endsection
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link href="{{asset('templates/admin')}}/css/style.min.css" rel="stylesheet">
+
+    <title>Detail</title>
 
     <style>
         * {
@@ -68,20 +67,18 @@
 </head>
 
 <body>
+    <div class="page-breadcrumb bg-white">
+        <a class="btn btn-primary" href="{{ URL::previous() }}"><i class="bx bx-arrow-back"></i>Kembali</a>
+    </div>
     <div class="flex-row">
         <div class="flex-container">
             <div class="flex-item-left">
-                <ul>
-                    <li><a class="btn btn-primary" href="{{ URL::previous() }}"><i class="bx bx-arrow-back"></i>Kembali</a></li>
-                  </ul>
                 <img src="{{asset('storage/'.$data->image)}}" class="flex-img" alt="">
             </div>
-            <div class="flex-item-right">
-                <h5><strong>Nama </strong>: {{ $data->name }}</h5>
-                <h5><strong>Description </strong>: {{ $data->description }}</h5>
-                <ul>
-                    {{-- <li><strong>Nama </strong>: {{ $data->name }}</li> --}}
-                </ul>
+            <div class="flex-item-right head">
+                <h2><strong>{{ $data->name }}</strong></h2>
+                <br><br>
+                <h5><strong>{{ $data->description }}</strong></h5>
             </div>
         </div>
     </div>
