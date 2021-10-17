@@ -42,11 +42,11 @@
 	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="home">Home</a></li>
 	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="about">About</a></li>
 	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="projects">Projects</a></li>
-	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="team"><span>Team</span></a></li>
-	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="testimony"><span>Testimony</span></a></li>
-	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="design"><span>Design</span></a></li>
-	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="contact"><span>Contact</span></a></li>
-	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}">Free Consultation</a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="team">Team</a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="testimony">Testimony</a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="design">Design</a></li>
+	          <li class="nav-item"><a href="{{route('home')}}" class="nav-link" data-nav-section="contact">Contact</a></li>
+	          <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone={6281774821084}" class="nav-link">Free Consultation</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -63,9 +63,9 @@
                         <h2 class="ftco-heading-2">Building Design</h2>
                             <p>Building Design is a platform in the field of architecture that bridges a home owner with architects.</p>
                             <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                                <li class="ftco-animate"><a href="https://twitter.com/"><span class="icon-twitter"></span></a></li>
+                                <li class="ftco-animate"><a href="https://www.facebook.com/"><span class="icon-facebook"></span></a></li>
+                                <li class="ftco-animate"><a href="https://www.instagram.com/"><span class="icon-instagram"></span></a></li>
                             </ul>
                     </div>
                 </div>

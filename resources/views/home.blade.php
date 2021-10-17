@@ -239,10 +239,9 @@
 									<div class="faded">
 										<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
 										<ul class="ftco-social text-center">
-			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+			                <li class="ftco-animate"><a href="https://twitter.com/"><span class="icon-twitter"></span></a></li>
+			                <li class="ftco-animate"><a href="https://www.facebook.com/"><span class="icon-facebook"></span></a></li>
+			                <li class="ftco-animate"><a href="https://www.instagram.com/"><span class="icon-instagram"></span></a></li>
 			              </ul>
 		              </div>
 		            </div>
@@ -261,10 +260,9 @@
 									<div class="faded">
 										<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
 										<ul class="ftco-social text-center">
-			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="https://twitter.com/"><span class="icon-twitter"></span></a></li>
+			                <li class="ftco-animate"><a href="https://www.facebook.com/"><span class="icon-facebook"></span></a></li>
+			                <li class="ftco-animate"><a href="https://www.instagram.com/"><span class="icon-instagram"></span></a></li>
 			              </ul>
 		              </div>
 		            </div>
@@ -283,10 +281,9 @@
 									<div class="faded">
 										<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
 										<ul class="ftco-social text-center">
-			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="https://twitter.com/"><span class="icon-twitter"></span></a></li>
+			                <li class="ftco-animate"><a href="https://www.facebook.com/"><span class="icon-facebook"></span></a></li>
+			                <li class="ftco-animate"><a href="https://www.instagram.com/"><span class="icon-instagram"></span></a></li>
 			              </ul>
 		              </div>
 		            </div>
@@ -305,10 +302,9 @@
 									<div class="faded">
 										<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
 										<ul class="ftco-social text-center">
-			                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-			                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="https://twitter.com/"><span class="icon-twitter"></span></a></li>
+			                <li class="ftco-animate"><a href="https://www.facebook.com/"><span class="icon-facebook"></span></a></li>
+			                <li class="ftco-animate"><a href="https://www.instagram.com/"><span class="icon-instagram"></span></a></li>
 			              </ul>
 		              </div>
 		            </div>
