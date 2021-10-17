@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
+use Illuminate\Support\Facades\Hash;
 
 class userController extends Controller
 {
@@ -44,7 +45,7 @@ class userController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.user.create');
     }
 
     /**
@@ -55,7 +56,26 @@ class userController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required',
+            'address' => 'required',
+            'phone' => 'required',
+            'password' => 'required',
+        ]);
+
+        $data = new user();
+        $data->name = $request->get('name');
+        $data->email = $request->get('email');
+        $data->address = $request->get('address');
+        $data->phone = $request->get('phone');
+
+        if ($data->password != Hash::make($request['password'])) {
+            $data->password = Hash::make($request['password']);
+        }
+        $data->save();
+        //jika data berhasil ditambahkan, akan kembali ke halaman utama
+        return redirect()->route('user.index')->with('success', 'User Berhasil Ditambahkan');
     }
 
     /**
@@ -103,6 +123,6 @@ class userController extends Controller
     public function destroy($id)
     {
         User::findOrFail($id)->delete();
-        return response()->json(['success' => true], 200);
+        return redirect()->route('user.index')->with('success', 'Data Berhasil Dihapus');
     }
 }
