@@ -127,90 +127,22 @@
     		<div class="row">
     			<div class="col-md-12 testimonial">
             <div class="carousel-project owl-carousel">
+            	@foreach ($data as $design)
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<img src="{{asset('templates/user')}}/images/project-1.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="{{asset('templates/user')}}/images/project-1.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
+				    				<<img class="block-20" src="{{asset('storage/'.$design->image)}}" class="img-fluid" alt="Colorlib Template">
+				    				<a href="{{asset('storage/'.$design->image)}}" class="icon image-popup d-flex justify-content-center align-items-center">
 				    					<span class="icon-expand"></span>
 				    				</a>
 			    				</div>
 			    				<div class="text px-4">
-			    					<h3><a href="#">Modern Minimalist House</a></h3>
+			    					<h3>{{ $design->name }}</h3>
 			    					<span>Exterior Design</span>
 			    				</div>
 		    				</div>
             	</div>
-            	<div class="item">
-            		<div class="project">
-		    					<div class="img">
-				    				<img src="{{asset('templates/user')}}/images/project-2.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="{{asset('templates/user')}}/images/project-2.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-				    					<span class="icon-expand"></span>
-				    				</a>
-			    				</div>
-			    				<div class="text px-4">
-			    					<h3><a href="#">Modern House</a></h3>
-			    					<span>Exterior Design</span>
-			    				</div>
-		    				</div>
-            	</div>
-            	<div class="item">
-            		<div class="project">
-		    					<div class="img">
-				    				<img src="{{asset('templates/user')}}/images/project-3.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="{{asset('templates/user')}}/images/project-3.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-				    					<span class="icon-expand"></span>
-				    				</a>
-			    				</div>
-			    				<div class="text px-4">
-			    					<h3><a href="#">Shophouse</a></h3>
-			    					<span>Exterior Design</span>
-			    				</div>
-		    				</div>
-            	</div>
-            	<div class="item">
-            		<div class="project">
-		    					<div class="img">
-				    				<img src="{{asset('templates/user')}}/images/project-4.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="{{asset('templates/user')}}/images/project-4.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-				    					<span class="icon-expand"></span>
-				    				</a>
-			    				</div>
-			    				<div class="text px-4">
-			    					<h3><a href="#">Boarding House</a></h3>
-			    					<span>Exterior Design</span>
-			    				</div>
-		    				</div>
-            	</div>
-            	<div class="item">
-            		<div class="project">
-		    					<div class="img">
-				    				<img src="{{asset('templates/user')}}/images/project-5.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="{{asset('templates/user')}}/images/project-5.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-				    					<span class="icon-expand"></span>
-				    				</a>
-			    				</div>
-			    				<div class="text px-4">
-			    					<h3><a href="#">Modern House</a></h3>
-			    					<span>Exterior Design</span>
-			    				</div>
-		    				</div>
-            	</div>
-            	<div class="item">
-            		<div class="project">
-		    					<div class="img">
-				    				<img src="{{asset('templates/user')}}/images/project-6.jpg" class="img-fluid" alt="Colorlib Template">
-				    				<a href="{{asset('templates/user')}}/images/project-6.jpg" class="icon image-popup d-flex justify-content-center align-items-center">
-				    					<span class="icon-expand"></span>
-				    				</a>
-			    				</div>
-			    				<div class="text px-4">
-			    					<h3><a href="#">Luxury Modern House</a></h3>
-			    					<span>Exterior Design</span>
-			    				</div>
-		    				</div>
-            	</div>
+                @endforeach
             </div>
           </div>
     		</div>
