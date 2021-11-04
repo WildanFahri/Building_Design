@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\design;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Aws\S3\S3Client;
 
 class designController extends Controller
 {
@@ -53,13 +54,38 @@ class designController extends Controller
 
         ]);
         if ($request->file('image')) {
-            $image_name = $request->file('image')->store('images', 'public');
+            $file = $request->file('image');
+
+            $filename = $file->getClientOriginalName();
+            $endpoint = 'https://objectstorage.ap-osaka-1.oraclecloud.com/p/svXQveLxqv-izxhn-ny4S2qCI7ya50IzLhU49yUIjAcSevI5cXUkTHeNJNfY7jwU/n/axlipurezk9j/b/buildingDesign/o/';
+            $s3 = new S3Client([
+                'region'  => 'ap-osaka-1',
+                'version' => 'latest',
+                'credentials' => [
+                    'key'    => 'a5c30768ad5cceff775b19525b18e2a760e5456e',
+                    'secret' => 'jzOUys+fSkAozhguZ5QeJ/lczzIHkqwYO610+zukcF8='
+                ],
+                'bucket_endpoint' => true,
+                'endpoint' => $endpoint
+            ]);
+
+            $s3->putObject([
+                'Bucket' => 'buildingDesign',
+                'Key' => $filename,
+                'SourceFile' => $file,
+                'StorageClass' => 'REDUCED_REDUNDANCY'
+
+            ]);
+
+            $image = $endpoint . 'buildingDesign/' . $filename;
         }
+
         $data = new design();
         $data->name = $request->get('name');
-        $data->image = $image_name;
+        $data->image = $image;
         $data->description = $request->get('description');
         $data->save();
+
         //jika data berhasil ditambahkan, akan kembali ke halaman utama
         return redirect()->route('design.index')->with('success', 'design Berhasil Ditambahkan');
     }

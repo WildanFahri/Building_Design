@@ -131,8 +131,8 @@
             	<div class="item">
             		<div class="project">
 		    					<div class="img">
-				    				<<img class="block-20" src="{{asset('storage/'.$design->image)}}" class="img-fluid" alt="Colorlib Template">
-				    				<a href="{{asset('storage/'.$design->image)}}" class="icon image-popup d-flex justify-content-center align-items-center">
+				    				<<img class="block-20" src="{{asset(''.$design->image)}}" class="img-fluid" alt="Colorlib Template">
+				    				<a href="{{asset(''.$design->image)}}" class="icon image-popup d-flex justify-content-center align-items-center">
 				    					<span class="icon-expand"></span>
 				    				</a>
 			    				</div>
@@ -318,7 +318,7 @@
             @foreach ($data as $design)
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry justify-content-end">
-                        <img class="block-20" src="{{asset('storage/'.$design->image)}}" alt="">
+                        <img class="block-20" src="{{asset(''.$design->image)}}" alt="">
                         <div class="text mt-3 float-right d-block">
                             <h3 class="heading">{{ $design->name }}</h3>
                         </div>

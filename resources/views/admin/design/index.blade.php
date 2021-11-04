@@ -69,7 +69,7 @@
 
                             <td>{{ $design->id }}</td>
                             <td>{{ $design->name }}</td>
-                            <td> <img width="100px" src="{{asset('storage/'.$design->image)}}"> </td>
+                            <td> <img width="100px" src="{{asset(''.$design->image)}}"> </td>
                             <td>{{ $design->description }}</td>
 
                             <td>
